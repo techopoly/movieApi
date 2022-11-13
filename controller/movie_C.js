@@ -23,11 +23,12 @@ const createMovie = async (req, res, next)=>{
 
     const title = req.body.title;
     const author = req.body.author
+    const year = req.body.year
     const desc = req.body.desc
     const param = (title || author)
     console.log(title)
     if(param){
-        const response = await movie_M.createMovie(title, author,desc);
+        const response = await movie_M.createMovie(title, author,year,desc);
         res.status(200).json({
            data: response
         });
