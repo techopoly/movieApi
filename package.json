@@ -1,0 +1,21 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "description": "a project done for 446 lab",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mongodb": "^4.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_": "node app.js",
+    "start": "nodemon my_file.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
